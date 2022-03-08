@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Colfax;
+    src: url(./font/Colfax-Light.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    all:unset
+}
+
+body {
+    background: linear-gradient(90deg, rgba(20,170,17,1) 0%, rgba(235,151,224,1) 0%, rgba(13,107,212,1) 100%, rgba(226,195,36,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Colfax;
+}
+
+.wordCounterBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(25, 255, 205, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 25px rgba(0,0,0,0.3);
+    overflow: hidden;
+    user-select: none;
+}
+
+.wordCounterTitle {
+    margin-top: 5px;
+    font-size: 40px;
+    animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0s both;
+}
+
+.textInput {
+    /* background-color: yellow; */
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    width: 50%;
+    padding: 15px 0px;
+    font-size: 17px;
+    color: #ffffff;
+    outline: none;
+    background: transparent;
+    display: block;
+}
+
+::placeholder {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.wordCounterResult {
+    font-size: 35;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
