@@ -1,6 +1,6 @@
-function calcular() {
-    var input = window.document.getElementsByClassName('textInput');
-    var quantity = window.document.getElementsByClassName('characterCount');
-    var numbers = input.length
-    quantity.innerHTML = `Isso é um teste`
+function calcular () {
+    var input = document.getElementsByClassName("textInput")[0].value
+    var charCount = document.getElementsByClassName("characterCount")[0]
+    var wordCount = input.length
+    charCount.innerHTML = wordCount
 }
